@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
@@ -18,13 +18,14 @@ body {
 }
 
 /*--------------------------------------*/
-/*   Fonts                              */
+/*   Headers                            */
 /*--------------------------------------*/
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.8px;
   font-weight: 300;
   margin-top: 0;
+  margin-left: 0.5em;
   margin-bottom: 1.5rem;
   line-height: initial;
 }
@@ -39,38 +40,40 @@ h5 > span, h6 > span {
   color: #888;
 }
 
-h1 {
-  font-size: 4.6rem;
+h1 { font-size: 4.6rem; }
+h2 { font-size: 4.0rem; }
+h3 { font-size: 3.4rem; }
+h4 { font-size: 2.8rem; }
+h5 { font-size: 2.2rem; }
+h6 { font-size: 1.6rem; }
+
+/*--------------------------------------*/
+/*   Code                               */
+/*--------------------------------------*/
+
+code {
+  font-size: 1.4rem;
+  padding: 0 0.3rem;
+  background-color: #eee;
+  border: 1px solid #aaa;
+  border-radius: 0.3rem;
 }
 
-h2 {
-  font-size: 4.0rem;
-}
-
-h3 {
-  font-size: 3.4rem;
-}
-
-h4 {
-  font-size: 2.8rem;
-}
-
-h5 {
-  font-size: 2.2rem;
-}
-
-h6 {
-  font-size: 1.6rem;
+pre > code {
+  padding: 1.0rem 1.5rem;
+  display: block;
+  word-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 /*--------------------------------------*/
-/*   Grid Sizing (mobile)               */
+/*   Grid Sizing                        */
 /*--------------------------------------*/
 
 .sim-cont {
   width: 95%;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 1.0rem 0;
 }
 
 .sim-row {
@@ -80,106 +83,53 @@ h6 {
 }
 
 .sim-col {
-  padding: 10px 1%;
-  margin: 3px 1%;
+  padding: 1.0rem 1%;
+  margin: 0.3rem 1%;
+  width: 100%;
 }
 
-.sim-sm-1 { width: 96%; }
-
-.sim-sm-1-2 { width: 46%; }
-
-.sim-sm-1-3 { width: 29.33%;}
-.sim-sm-2-3 { width: 62.67%;}
-
-.sim-sm-1-4 { width: 21%; }
-.sim-sm-3-4 { width: 71%; }
-
-.sim-sm-1-5 { width: 16%; }
-.sim-sm-2-5 { width: 36%; }
-.sim-sm-3-5 { width: 56%; }
-.sim-sm-4-5 { width: 76%; }
-
-.sim-sm-1-6 { width: 12.66% }
-.sim-sm-5-6 { width: 79.33% }
-
-.sim-sm-1-8 { width: 8.5%; }
-.sim-sm-3-8 { width: 33.5%; }
-.sim-sm-5-8 { width: 58.5%; }
-.sim-sm-7-8 { width: 83.5%; }
-
-.sim-sm-1-12 { width: 4.33%; }
-.sim-sm-5-12 { width: 37.67%; }
-.sim-sm-7-12 { width: 54.33%; }
-.sim-sm-11-12 { width: 87.67%; }
-
 /*--------------------------------------*/
-/*   Grid Sizing (tablet)               */
+/*   Tablet Exceptions                  */
 /*--------------------------------------*/
 
-@media screen and (min-width: 750px) {  
+@media screen and (min-width: 750px) {
+  /* Grid Sizing */
   .sim-cont { width: 730px; }
 
-  .sim-md-1 { width: 96%; }
+  .sim-1 { width: 96%; }
   
-  .sim-md-1-2 { width: 46%; }
+  .sim-1-2 { width: 46%; }
 
-  .sim-md-1-3 { width: 29.33%;}
-  .sim-md-2-3 { width: 62.67%;}
+  .sim-1-3 { width: 29.33%;}
+  .sim-2-3 { width: 62.67%;}
 
-  .sim-md-1-4 { width: 21%; }
-  .sim-md-3-4 { width: 71%; }
+  .sim-1-4 { width: 21%; }
+  .sim-3-4 { width: 71%; }
 
-  .sim-md-1-5 { width: 16%; }
-  .sim-md-2-5 { width: 36%; }
-  .sim-md-3-5 { width: 56%; }
-  .sim-md-4-5 { width: 76%; }
+  .sim-1-5 { width: 16%; }
+  .sim-2-5 { width: 36%; }
+  .sim-3-5 { width: 56%; }
+  .sim-4-5 { width: 76%; }
 
-  .sim-md-1-6 { width: 12.66% }
-  .sim-md-5-6 { width: 79.33% }
+  .sim-1-6 { width: 12.66% }
+  .sim-5-6 { width: 79.33% }
 
-  .sim-md-1-8 { width: 8.5%; }
-  .sim-md-3-8 { width: 33.5%; }
-  .sim-md-5-8 { width: 58.5%; }
-  .sim-md-7-8 { width: 83.5%; }
+  .sim-1-8 { width: 8.5%; }
+  .sim-3-8 { width: 33.5%; }
+  .sim-5-8 { width: 58.5%; }
+  .sim-7-8 { width: 83.5%; }
   
-  .sim-md-1-12 { width: 4.33%; }
-  .sim-md-5-12 { width: 37.67%; }
-  .sim-md-7-12 { width: 54.33%; }
-  .sim-md-11-12 { width: 87.67%; }
+  .sim-1-12 { width: 4.33%; }
+  .sim-5-12 { width: 37.67%; }
+  .sim-7-12 { width: 54.33%; }
+  .sim-11-12 { width: 87.67%; }
 }
 
 /*--------------------------------------*/
-/*   Grid Sizing (desktop)              */
+/*   Desktop Excpetions                 */
 /*--------------------------------------*/
 
 @media screen and (min-width: 1200px) {
+  /* Grid Sizing */
   .sim-cont { width: 1180px; }
-  
-  .sim-lg-1 { width: 96%; }
-
-  .sim-lg-1-2 { width: 46%; }
-
-  .sim-lg-1-3 { width: 29.33%;}
-  .sim-lg-2-3 { width: 62.67%;}
-
-  .sim-lg-1-4 { width: 21%; }
-  .sim-lg-3-4 { width: 71%; }
-
-  .sim-lg-1-5 { width: 16%; }
-  .sim-lg-2-5 { width: 36%; }
-  .sim-lg-3-5 { width: 56%; }
-  .sim-lg-4-5 { width: 76%; }
-
-  .sim-lg-1-6 { width: 12.66% }
-  .sim-lg-5-6 { width: 79.33% }
-
-  .sim-lg-1-8 { width: 8.5%; }
-  .sim-lg-3-8 { width: 33.5%; }
-  .sim-lg-5-8 { width: 58.5%; }
-  .sim-lg-7-8 { width: 83.5%; }
-  
-  .sim-lg-1-12 { width: 4.33%; }
-  .sim-lg-5-12 { width: 37.67%; }
-  .sim-lg-7-12 { width: 54.33%; }
-  .sim-lg-11-12 { width: 87.67%; }
 }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CodeTriangle Grid Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="simplex.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+  </head>
+  <body>
+    <div class="sim-cont display">
+      <h1>Simplex<span>The grid that makes sense</span></h1>
+      <p>Simplex is the CSS grid that doesn't rely on only one type of column. You can have halves, thirds, quarters, sixths, eighths and twelfths. On top of that, it's incredibly lightweight. Whereas Bootstrap is several thousand lines of restrictive, bulky code, Simplex is a single elegant package of less than 300 lines that gives you room to customize.</p>
+      <p>Simplex was created with smaller projects in mind -- something you don't need large tracts of code for. It was designed, not to be a fully functional framework, but something you could build on depending on what you need. For larger, more intensive projects, using a more fleshed out framework may benefit you more.</p>
+      <h2>The Grid<span>Where the magic happens</span></h2>
+      <p>Using the grid is simple. To create a container, you just need to create a div with the <code>class="sim-cont"</code> attribute. The grid will resize thrice based on screen size. It starts at 1200 pixels for desktops, falls to 750 pixels for tablets and the width of the screen for mobile. Rows are based on the <code>class="sim-row"</code> attribute. Columns are based on fractions --  that is, <code>class="sim-1-2"</code> will produce a column taking up half of the horizontal space and <code>class="sim-3-4"</code> will produce a column taking three quarters of the vertical space. Listed below are some of the most common sizes you'll be using.</p>
+      <div class="sim-row">
+        <!-- Full width -->
+        <div class="sim-col sim-1">1</div>
+        <!-- Halves -->
+        <div class="sim-col sim-1-2">1/2</div>
+        <div class="sim-col sim-1-2">1/2</div>
+        <!-- Thirds -->
+        <div class="sim-col sim-1-3">1/3</div>
+        <div class="sim-col sim-1-3">1/3</div>
+        <div class="sim-col sim-1-3">1/3</div>
+        <div class="sim-col sim-1-3">1/3</div>
+        <div class="sim-col sim-2-3">2/3</div>
+        <!-- Quarters -->
+        <div class="sim-col sim-1-4">1/4</div>
+        <div class="sim-col sim-1-4">1/4</div>
+        <div class="sim-col sim-1-4">1/4</div>
+        <div class="sim-col sim-1-4">1/4</div>
+        <div class="sim-col sim-1-4">1/4</div>
+        <div class="sim-col sim-3-4">3/4</div>
+        <!-- Fifths -->
+        <div class="sim-col sim-1-5">1/5</div>
+        <div class="sim-col sim-1-5">1/5</div>
+        <div class="sim-col sim-1-5">1/5</div>
+        <div class="sim-col sim-1-5">1/5</div>
+        <div class="sim-col sim-1-5">1/5</div>
+        <div class="sim-col sim-2-5">2/5</div>
+        <div class="sim-col sim-3-5">3/5</div>
+        <div class="sim-col sim-1-5">1/5</div>
+        <div class="sim-col sim-4-5">4/5</div>
+        <!-- Sixths -->
+        <div class="sim-col sim-1-6">1/6</div>
+        <div class="sim-col sim-1-6">1/6</div>
+        <div class="sim-col sim-1-6">1/6</div>
+        <div class="sim-col sim-1-6">1/6</div>
+        <div class="sim-col sim-1-6">1/6</div>
+        <div class="sim-col sim-1-6">1/6</div>
+        <div class="sim-col sim-1-6">1/6</div>
+        <div class="sim-col sim-5-6">5/6</div>
+        <!-- Eighths -->
+        <div class="sim-col sim-1-8">1/8</div>
+        <div class="sim-col sim-1-8">1/8</div>
+        <div class="sim-col sim-1-8">1/8</div>
+        <div class="sim-col sim-1-8">1/8</div>
+        <div class="sim-col sim-1-8">1/8</div>
+        <div class="sim-col sim-1-8">1/8</div>
+        <div class="sim-col sim-1-8">1/8</div>
+        <div class="sim-col sim-1-8">1/8</div>
+        <!-- Twelfths -->
+        <div class="sim-col sim-1-12">1/12</div>
+        <div class="sim-col sim-1-12">1/12</div>
+        <div class="sim-col sim-1-12">1/12</div>
+        <div class="sim-col sim-1-12">1/12</div>
+        <div class="sim-col sim-1-12">1/12</div>
+        <div class="sim-col sim-1-12">1/12</div>
+        <div class="sim-col sim-1-12">1/12</div>
+        <div class="sim-col sim-1-12">1/12</div>
+        <div class="sim-col sim-1-12">1/12</div>
+        <div class="sim-col sim-1-12">1/12</div>
+        <div class="sim-col sim-1-12">1/12</div>
+        <div class="sim-col sim-1-12">1/12</div>
+      </div>
+        <pre>
+          <code>&lt;div class="sim-row"&gt;
+  &lt;!-- Full width --&gt;
+  &lt;div class="sim-col sim-1"&gt;1&lt;/div&gt;
+  
+  &lt;!-- Halves --&gt;
+  &lt;div class="sim-col sim-1-2"&gt;1/2&lt;/div&gt;
+  &lt;div class="sim-col sim-1-2"&gt;1/2&lt;/div&gt;
+  
+  &lt;!-- Thirds --&gt;
+  &lt;div class="sim-col sim-1-3"&gt;1/3&lt;/div&gt;
+  &lt;div class="sim-col sim-1-3"&gt;1/3&lt;/div&gt;
+  &lt;div class="sim-col sim-1-3"&gt;1/3&lt;/div&gt;
+  &lt;div class="sim-col sim-1-3"&gt;1/3&lt;/div&gt;
+  &lt;div class="sim-col sim-2-3"&gt;2/3&lt;/div&gt;
+  
+  &lt;!-- Quarters --&gt;
+  &lt;div class="sim-col sim-1-4"&gt;1/4&lt;/div&gt;
+  &lt;div class="sim-col sim-1-4"&gt;1/4&lt;/div&gt;
+  &lt;div class="sim-col sim-1-4"&gt;1/4&lt;/div&gt;
+  &lt;div class="sim-col sim-1-4"&gt;1/4&lt;/div&gt;
+  &lt;div class="sim-col sim-1-4"&gt;1/4&lt;/div&gt;
+  &lt;div class="sim-col sim-3-4"&gt;3/4&lt;/div&gt;
+  
+  ...
+&lt;/div&gt;</code>
+        </pre>
+    </div>
+  </body>
+</html>
